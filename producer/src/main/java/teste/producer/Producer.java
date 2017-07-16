@@ -35,9 +35,9 @@ public class Producer {
     public void doGet() {
 	try {
 	    List<Mensagem> mensagens = new ArrayList<>();
-	    for (int i = 0; i < 5; i++) {
+	    for (long i = 0; i < 5; i++) {
 		Mensagem m = new Mensagem();
-		m.setCodigo(Double.doubleToLongBits(Math.random()));
+		m.setCodigo(i);
 		m.setConteudo("IPSUM LORE");
 		m.setHorario(new Date());
 		m.setNome("TESTE");
