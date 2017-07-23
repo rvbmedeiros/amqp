@@ -49,8 +49,8 @@ public class Config extends SpringBootServletInitializer {
     }
 
     private ApiInfo apiInfo() {
-	Contact c = new Contact("TI Finaxis", null, "sustentacao@finaxis.com.br");
-	ApiInfo apiInfo = new ApiInfo("Finaxis Web API", "Some custom description of API.", "API TOS", "Terms of service",
+	Contact c = new Contact("TI Finaxis", "http://localhost:8080", "sustentacao@finaxis.com.br");
+	ApiInfo apiInfo = new ApiInfo("Finaxis Web API", "Some custom description of API.", "1.0", "Terms of service",
 		c, "License of API", "API license URL");
 	return apiInfo;
     }
